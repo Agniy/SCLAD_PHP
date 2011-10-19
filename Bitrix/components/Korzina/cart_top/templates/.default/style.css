@@ -1,0 +1,43 @@
+.content {
+width:auto!important;
+}
+
+/*.slide-block {
+    float: left;
+    height: 130px;
+    margin: 5px 0 0;
+}*/
+
+.slide-block {
+    position: relative;
+    z-index: 3;
+}
+
+.slide-block .block {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CECECE;
+    left: 0px;
+    padding: 4px 0 10px 8px;
+    position: absolute;
+    top: -5px;
+    width: 116px;
+    z-index: 999;
+}
+
+.slide-block .cab {
+    background: url("../images/arrow-private.gif") no-repeat scroll 100% 6px transparent;
+    margin-right: 4px;
+    padding: 0 13px 0 0;
+    position: relative;
+    z-index: 9;
+}
+.slide-block .block .add {
+    display: block;
+    overflow: hidden;
+    padding: 1px 0 0;
+    width: 100%;
+}
+
+.slide-block .cab .grey{
+	color:#366;
+}
