@@ -157,6 +157,10 @@ if (CModule::IncludeModule("form"))
 		//print_r2($_REQUEST);
 		//die();
 		
+
+		
+		
+		
 		$arResult["arrVALUES"] = array();
 		
 		//echo '<pre>'; print_r($_REQUEST); echo '</pre>';
@@ -185,12 +189,19 @@ if (CModule::IncludeModule("form"))
 					if(isset($_REQUEST['indi_dob']))
 						{
 							$RESULT_ID=false;
-							echo GetMessage('FORM_DATA_SAVED');
-							echo '<br>';
+							$_REQUEST['indi_fine']=1;
 							unset($_REQUEST['indi_dob']);
 						}
 					else
 						{
+							//print_r2($arResult["arrVALUES"]);
+							foreach($arResult["arrVALUES"] as $key=>$val)
+							{
+								if(is_array($val))
+								$arResult["arrVALUES"][$key]=implode(",", $val);
+							}
+							//print_r2($arResult["arrVALUES"]);
+							//die();
 							$RESULT_ID = CFormResult::Add($arParams["WEB_FORM_ID"], $arResult["arrVALUES"]);
 						}
 					
@@ -219,12 +230,12 @@ if (CModule::IncludeModule("form"))
 											$arParams["LIST_URL"]
 										)."?formresult=".urlencode($arResult["FORM_RESULT"])
 									);*/
-									echo '111111';
+									//echo '111111';
 								}
 								else
 								{
 									//LocalRedirect($arParams["LIST_URL"].(strpos($arParams["LIST_URL"], "?") === false ? "?" : "&")."WEB_FORM_ID=".$arParams["WEB_FORM_ID"]."&RESULT_ID=".$RESULT_ID."&strFormNote=".urlencode($arResult["FORM_NOTE"]));
-									echo '222222';
+									//echo '222222';
 									/*LocalRedirect(
 										$arParams["LIST_URL"]
 										.(strpos($arParams["LIST_URL"], "?") === false ? "?" : "&")
@@ -248,7 +259,7 @@ if (CModule::IncludeModule("form"))
 										.(strpos($arParams["EDIT_URL"], "?") === false ? "?" : "&")
 										."formresult=".urlencode($arResult["FORM_RESULT"])
 									);*/
-									echo '333333';
+									//echo '333333';
 								}
 								else
 								{
@@ -259,7 +270,7 @@ if (CModule::IncludeModule("form"))
 										."&RESULT_ID=".$RESULT_ID
 										."&formresult=".urlencode($arResult["FORM_RESULT"])
 									);*/
-									echo '444444';
+									//echo '444444';
 								}
 								//die();
 							}
@@ -280,7 +291,7 @@ if (CModule::IncludeModule("form"))
 									.(strpos($arParams["SUCCESS_URL"], "?") === false ? "?" : "&")
 									."formresult=".urlencode($arResult["FORM_RESULT"])
 								);*/
-								echo '555555';
+								//echo '555555';
 							}
 							else
 							{
@@ -291,7 +302,7 @@ if (CModule::IncludeModule("form"))
 									."&RESULT_ID=".$RESULT_ID
 									."&formresult=".urlencode($arResult["FORM_RESULT"])
 								);*/
-								echo '666666';
+								//echo '666666';
 							}
 							
 							//die();
@@ -304,7 +315,7 @@ if (CModule::IncludeModule("form"))
 									array('formresult', 'strFormNote', 'SEF_APPLICATION_CUR_PAGE_URL')
 								)
 							);
-							echo '777777';
+							//echo '777777';
 							//die();
 						}
 						else
