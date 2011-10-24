@@ -1,0 +1,71 @@
+.auth-form-info
+{
+	text-align: center;
+	padding-bottom: 2px;
+	font-family: Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal;
+}
+
+.auth-form-info input 
+{
+	margin-top: 4px;
+	color:#929292; background-color:#EFEFEF; border:1px solid #C8C8C8;
+	font-family:Verdana,Arial,Helvetica; font-size:11px;
+}
+
+.auth-form-table
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.auth-form-table td 
+{
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.auth-form-table .auth-form-table-col1 {
+	height: 0;
+	width: 0%
+}
+
+.auth-form-table .auth-form-table-col2 {
+	height: 0;
+	width: 100%
+}
+
+.auth-form-table thead td, .auth-form-table tbody td 
+{
+	text-align: center;
+}
+
+.auth-form-table tfoot td 
+{
+	font-family: Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal;
+}
+
+.auth-form-table tfoot a 
+{
+	color: #333333;
+}
+
+.auth-form-table input 
+{
+	font-family:Verdana,Arial,Helvetica; 
+	font-size:11px;
+	color:#929292; 
+	background-color:#EFEFEF; 
+	border:1px solid #C8C8C8;
+}
+
+.auth-form-table thead input
+{
+	width: 100px;
+}
+
+.box-login .ch {
+    float: left;
+    height: 14px;
+    margin: 3px 5px 0 0;
+    width: 14px;
+}
