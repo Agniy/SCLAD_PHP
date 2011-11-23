@@ -7,6 +7,7 @@
 	3.1)base_form - использовал компонент для всплывающих окошек. !
 	
 4)Menu - компоненты вывода всеразличных меню
+	4.1)horizontal_tamplate_1 - шаблон горизонтального мультилевельного меню(положить в папку - /public_html/bitrix/templates/.default/components/bitrix/);
 5)Tovary - компоненты вывода товаров
 
 	5.1)randoom - выборка случайного элемента из инфоблока(1csupermarket.bt-tsd.ru).
